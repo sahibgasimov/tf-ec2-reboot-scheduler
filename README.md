@@ -4,8 +4,6 @@
 
 This Terraform code sets up an automated EC2 reboot schedule for specified AWS EC2 instances using Amazon EventBridge Scheduler. It also creates the necessary IAM roles and policies to allow the scheduler to interact with the EC2 instances.
 
-Note: There is one limitation: You can only add up to five targets. If you need more then you have to use System Manager.
-
 ### Features:
 
 - Define a cron-based schedule for rebooting EC2 instances.
@@ -59,3 +57,5 @@ Variables:
 - aws_cloudwatch_event_scheduler_name: A unique name for your EventBridge scheduler.
 - schedule_expression: The cron expression representing your desired schedule.
 
+Note: 
+You can only add up to five targets. If you need more then you have to use System Manager.
