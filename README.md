@@ -20,8 +20,8 @@ AWS account
 
 1. Clone the repository:
     ```
-    git clone [repository-url]
-    cd [repository-dir]
+    git clone https://github.com/sahibgasimov/tf-ec2-reboot-scheduler.git
+    cd tf-ec2-reboot-scheduler
     ```
 2. Initialize Terraform:
     ```hcl
@@ -29,7 +29,7 @@ AWS account
     ``````
 3. Configure your variables:
 
-    Create a terraform.tfvars or similar file and specify the required variables:
+   Specify the required variables in terraform.tfstate file:
 
     ```hcl
     region = "us-east-2"
